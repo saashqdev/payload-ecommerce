@@ -1,0 +1,374 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "LocaleSwitch": {
+    "label": "Change language",
+    "locale": "{locale, select, pl {Polish} en {English} other {Unknown}}"
+  },
+  "ProductDetails": {
+    "add-to-cart": "Add to cart",
+    "product-unavailable": "Product unavailable",
+    "description": "Description",
+    "price": "Price",
+    "color": "Color",
+    "choose-color": "Choose a color",
+    "size": "Size",
+    "choose-size": "Choose a size",
+    "product-info": "Product information",
+    "reviews": "Reviews",
+    "sizing-chart": "See sizing chart",
+    "additional-details": "Additional details",
+    "add-to-favs": "Add to favorites",
+    "stock-left": "Stock left:",
+    "maximum-stock": "You already have maximum stock of this item in your cart."
+  },
+  "ProductList": {
+    "variants-singular": "variant",
+    "variants-plural": "variants",
+    "filters": "Filters",
+    "categories": "Categories",
+    "products": "Products",
+    "close-filters": "Close filters",
+    "sort": "Sort",
+    "most-popular": "Most popular",
+    "newest": "Newest",
+    "price-low-to-high": "Price: low to high",
+    "price-high-to-low": "Price: high to low",
+    "color": "Color",
+    "size": "Size"
+  },
+  "Cart": {
+    "title": "Shopping cart",
+    "close-panel": "Close panel",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "subtotal-info": "Shipping will be calculated at checkout.",
+    "checkout": "Checkout",
+    "or": "or",
+    "continue-shopping": "Continue shopping"
+  },
+  "WishList": {
+    "title": "Wishlist",
+    "close-panel": "Close panel",
+    "remove": "Remove",
+    "add-to-cart": "Add to cart",
+    "unavailable": "Product unavailable"
+  },
+  "LoginForm": {
+    "title": "Sign in to your account",
+    "email": "Email address",
+    "password": "Password",
+    "submit": "Sign in",
+    "forgot-password": "Forgot password?",
+    "no-account": "Don't have an account?",
+    "register-now": "Register now!",
+    "verified-success": "Email has been verified successfully. You can now sign in.",
+    "verified-fail": "Email verification failed. Please try again or contact support.",
+    "errors": {
+      "email": "Invalid email address",
+      "email-empty": "Email address cannot be empty",
+      "password": "Password cannot be empty",
+      "auth": "Invalid email or password",
+      "server-error": "Internal server error. Please contact support."
+    }
+  },
+  "RegisterForm": {
+    "title": "Create an account",
+    "email": "Email address",
+    "password": "Password",
+    "confirm-password": "Confirm password",
+    "submit": "Sign up",
+    "success": "Account has been created successfully. An email has been sent to you with a confirmation link.",
+    "have-account": "Already have an account?",
+    "login-now": "Login here!",
+    "errors": {
+      "email": "Invalid email address",
+      "email-empty": "Email address cannot be empty",
+      "password": "Password cannot be empty",
+      "password-length": "Password must be at least 8 characters long",
+      "passwords-mismatch": "Passwords do not match",
+      "server-error": "Internal server error. Please contact support."
+    }
+  },
+  "CheckoutFormServer": {
+    "checkout": "Checkout"
+  },
+  "CheckoutForm": {
+    "form": {
+      "buy-as": "You are buying as",
+      "individual": "Individual",
+      "company": "Company",
+      "shipping-address": "Shipping address",
+      "other-invoice": "I want to receive an invoice with different data",
+      "full-name": "Full name or company name",
+      "full-name-placeholder": "John Doe",
+      "tin": "TIN",
+      "tin-placeholder": "123-456-78-90",
+      "address": "Address",
+      "address-placeholder": "123 Main St",
+      "city": "City",
+      "city-placeholder": "New York",
+      "country": "Country",
+      "country-placeholder": "United States",
+      "region": "Region",
+      "region-placeholder": "New York",
+      "email": "Email",
+      "email-placeholder": "john.doe@example.com",
+      "phone": "Phone",
+      "phone-placeholder": "+1 234 567 890",
+      "postal-code": "Postal code",
+      "postal-code-placeholder": "10001",
+      "delivery-method": "Delivery method",
+      "payment-method": "Payment method",
+      "change": "Change",
+      "invoice-data": "Invoice data",
+      "no-shipping": "No shipping methods available, please contact support.",
+      "internal-server-error": "An unexpected error occurred. Please contact support."
+    },
+    "change-address-dialog": {
+      "change-address": "Change your address",
+      "add-new": "Add new address",
+      "save": "Save"
+    },
+    "add-address-dialog": {
+      "add-address": "Add new address",
+      "save": "Save",
+      "saving": "Saving..."
+    },
+    "countries": {
+      "ad": "Andorra",
+      "al": "Albania",
+      "at": "Austria",
+      "ba": "Bosnia and Herzegovina",
+      "be": "Belgium",
+      "bg": "Bulgaria",
+      "by": "Belarus",
+      "ch": "Switzerland",
+      "cy": "Cyprus",
+      "cz": "Czech Republic",
+      "de": "Germany",
+      "dk": "Denmark",
+      "ee": "Estonia",
+      "es": "Spain",
+      "fi": "Finland",
+      "fr": "France",
+      "gb": "United Kingdom",
+      "gr": "Greece",
+      "hr": "Croatia",
+      "hu": "Hungary",
+      "ie": "Ireland",
+      "is": "Iceland",
+      "it": "Italy",
+      "li": "Liechtenstein",
+      "lt": "Lithuania",
+      "lu": "Luxembourg",
+      "lv": "Latvia",
+      "mc": "Monaco",
+      "md": "Moldova",
+      "me": "Montenegro",
+      "mk": "North Macedonia",
+      "mt": "Malta",
+      "nl": "Netherlands",
+      "no": "Norway",
+      "pl": "Poland",
+      "pt": "Portugal",
+      "ro": "Romania",
+      "rs": "Serbia",
+      "ru": "Russia",
+      "se": "Sweden",
+      "si": "Slovenia",
+      "sk": "Slovakia",
+      "sm": "San Marino",
+      "ua": "Ukraine",
+      "va": "Vatican City",
+      "us": "United States",
+      "other": "Other"
+    },
+    "errors": {
+      "invoice": {
+        "name": "Name cannot be empty",
+        "address": "Address cannot be empty",
+        "city": "City cannot be empty",
+        "country": "Country cannot be empty",
+        "region": "Region cannot be empty",
+        "postalCode": "Postal code cannot be empty",
+        "tin": "TIN cannot be empty"
+      },
+      "shipping": {
+        "name": "Name cannot be empty",
+        "address": "Address cannot be empty",
+        "city": "City cannot be empty",
+        "country": "Country cannot be empty",
+        "region": "Region cannot be empty",
+        "postalCode": "Postal code cannot be empty",
+        "phone": "Invalid phone number",
+        "email": "Invalid email address"
+      },
+      "deliveryMethod": "You must choose a delivery method",
+      "paymentMethod": "You must choose a payment method"
+    }
+  },
+  "DeliveryMethods": {
+    "inpost-pickup": "InPost lockers",
+    "inpost-courier": "InPost courier",
+    "choose-pickup": "Choose point",
+    "close": "Close"
+  },
+  "OrderSummary": {
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "confirm": "Confirm order",
+    "remove": "Remove",
+    "items-in-cart": "Items in your cart",
+    "order-summary": "Order summary"
+  },
+  "Account": {
+    "navigation": {
+      "orders": "Orders",
+      "settings": "Settings",
+      "orders-data": "Data for orders",
+      "help": "Help"
+    },
+    "orders": {
+      "title": "Orders",
+      "pending": "<yellow>Pending</yellow>",
+      "paid": "<green>Paid</green>",
+      "unpaid": "<red>Unpaid</red>",
+      "processing": "<yellow>Processing</yellow>",
+      "shipped": "<green>Shipped</green>",
+      "completed": "<green>Completed</green>",
+      "cancelled": "<red>Cancelled</red>",
+      "returned": "<red>Returned</red>"
+    },
+    "orders-data": {
+      "title": "Data for orders",
+      "add-new": "Add new address",
+      "set-as-default": "Set as default"
+    },
+    "settings": {
+      "title": "Account settings",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "birthDate": "Birth date",
+      "email": "Email address",
+      "password": "Password",
+      "change-password": "Change password",
+      "old-password": "Old password",
+      "new-password": "New password",
+      "confirm-password": "Confirm new password",
+      "save": "Save",
+      "update": "Update",
+      "password-form": {
+        "success": "Password has been changed successfully. You can close that window.",
+        "errors": {
+          "old-password": "Old password cannot be empty",
+          "new-password": "New password cannot be empty",
+          "password-length": "Password must be at least 8 characters long",
+          "passwords-mismatch": "Passwords do not match",
+          "password-incorrect": "Old password is incorrect",
+          "password-same": "New password cannot be the same as the old one",
+          "server-error": "Internal server error. Please contact support."
+        }
+      }
+    },
+    "wrapper": {
+      "my-account": "My account",
+      "logout": "Log out"
+    }
+  },
+  "Order": {
+    "thank-you": "Thank you!",
+    "pending": {
+      "title": "Your order is pending now.",
+      "subtitle": "Please wait for the payment to be processed. Order {orderID}"
+    },
+    "paid": {
+      "title": "Payment has been received.",
+      "subtitle": "We will start processing your order soon. Order {orderID}"
+    },
+    "unpaid": {
+      "title": "Payment failed.",
+      "subtitle": "Please try again or contact support if you have any trouble. Order {orderID}"
+    },
+    "processing": {
+      "title": "We're processing your order.",
+      "subtitle": "Order {orderID} will be shipped soon."
+    },
+    "shipped": {
+      "title": "It's on its way!",
+      "subtitle": "Your order {orderID} has been shipped."
+    },
+    "completed": {
+      "title": "Finished!",
+      "subtitle": "You received your order {orderID}."
+    },
+    "cancelled": {
+      "title": "Cancelled.",
+      "subtitle": "The order {orderID} has been cancelled."
+    },
+    "returned": {
+      "title": "Returned.",
+      "subtitle": "Order {orderID} has been returned."
+    },
+    "tracking-number": "Tracking number: ",
+    "your-order": "Your order",
+    "items": "Items",
+    "quantity": "Quantity",
+    "price": "Price",
+    "your-information": "Your information",
+    "shipping-address": "Shipping address",
+    "shipping-method": "Shipping method",
+    "summary": "Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "pickup-point": "Pickup point"
+  },
+  "Emails": {
+    "reset-password": {
+      "greeting": "Hello {name},",
+      "message": "Someone requested a password reset for your account. If it wasn't you, ignore this email.",
+      "subject": "Reset your password",
+      "button": "Reset password",
+      "body": "Click the link below to reset your password"
+    },
+    "verify-email": {
+      "greeting": "Hello {name},",
+      "subject": "Verify your email",
+      "button": "Verify email",
+      "body": "Click the link below to verify your email"
+    },
+    "welcome": {
+      "greeting": "Hello {name},",
+      "preview": "Welcome to our shop! Were glad to have you there",
+      "subject": "Welcome to our store",
+      "body": "Thank you for creating an account in our store. We hope you will enjoy your shopping experience.",
+      "button": "Go shopping"
+    }
+  },
+  "ResetPasswordForm": {
+    "new-password": "New password",
+    "confirm-password": "Confirm password",
+    "change-password": "Change password",
+    "title": "Reset your password",
+    "errors": {
+      "old-password": "Old password cannot be empty",
+      "new-password": "New password cannot be empty",
+      "password-length": "Password must be at least 8 characters long",
+      "passwords-mismatch": "Passwords do not match",
+      "password-incorrect": "Old password is incorrect",
+      "password-same": "New password cannot be the same as the old one",
+      "server-error": "Internal server error. Please contact support."
+    }
+  },
+  "Search": {
+    "no-results": "No results found.",
+    "results": "Results for: ",
+    "search": "Search...",
+    "categories": "Categories",
+    "products": "Products"
+  }
+}

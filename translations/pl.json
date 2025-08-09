@@ -1,0 +1,375 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "LocaleSwitch": {
+    "label": "Wybierz język",
+    "locale": "{locale, select, pl {Polski} en {Angielski} other {Unknown}}"
+  },
+  "ProductDetails": {
+    "add-to-cart": "Dodaj do koszyka",
+    "product-unavailable": "Produkt niedostępny",
+    "description": "Opis",
+    "price": "Cena",
+    "color": "Kolor",
+    "choose-color": "Wybierz kolor",
+    "size": "Rozmiar",
+    "choose-size": "Wybierz rozmiar",
+    "product-info": "Informacje o produkcie",
+    "reviews": "Opinie",
+    "sizing-chart": "Zobacz tabelę rozmiarów",
+    "additional-details": "Dodatkowe szczegóły",
+    "add-to-favs": "Dodaj do ulubionych",
+    "stock-left": "Pozostało na stanie:",
+    "maximum-stock": "Masz już maksymalną ilość tego produktu w koszyku."
+  },
+  "ProductList": {
+    "variants-singular": "wariant",
+    "variants-plural": "warianty",
+    "filters": "Filtry",
+    "categories": "Kategorie",
+    "products": "Produkty",
+    "close-filters": "Zamknij filtry",
+    "sort": "Sortuj",
+    "most-popular": "Najpopularniejsze",
+    "newest": "Najnowsze",
+    "price-low-to-high": "Cena: od najniższej",
+    "price-high-to-low": "Cena: od najwyższej",
+    "color": "Kolor",
+    "size": "Rozmiar"
+  },
+  "Cart": {
+    "title": "Koszyk",
+    "close-panel": "Zamknij panel",
+    "remove": "Usuń",
+    "subtotal": "Suma częściowa",
+    "subtotal-info": "Koszt dostawy zostanie obliczony przy kasie.",
+    "checkout": "Do kasy",
+    "or": "lub",
+    "continue-shopping": "Kontynuuj zakupy"
+  },
+  "WishList": {
+    "title": "Ulubione",
+    "close-panel": "Zamknij panel",
+    "remove": "Usuń",
+    "add-to-cart": "Dodaj do koszyka",
+    "unavailable": "Produkt niedostępny"
+  },
+  "LoginForm": {
+    "title": "Zaloguj się na swoje konto",
+    "email": "Adres e-mail",
+    "password": "Hasło",
+    "submit": "Zaloguj się",
+    "forgot-password": "Zapomniałeś hasła?",
+    "no-account": "Nie masz konta?",
+    "register-now": "Zarejestruj się teraz!",
+    "verified-success": "Adres e-mail zweryfikowany. Możesz się teraz zalogować.",
+    "verified-fail": "Nieprawidłowy link weryfikacyjny. Spróbuj ponownie lub skontaktuj się z nami.",
+    "errors": {
+      "email": "Nieprawidłowy adres e-mail",
+      "email-empty": "Adres e-mail nie może być pusty",
+      "password": "Hasło nie może być puste",
+      "auth": "Nieprawidłowy adres e-mail lub hasło",
+      "server-error": "Błąd wewnętrzny serwera. Skontaktuj się z nami."
+    }
+  },
+  "RegisterForm": {
+    "title": "Utwórz konto",
+    "email": "Adres e-mail",
+    "password": "Hasło",
+    "confirm-password": "Potwierdź hasło",
+    "submit": "Zarejestruj się",
+    "success": "Konto utworzone pomyślnie. Na Twój adres e-mail został wysłany link aktywacyjny.",
+    "have-account": "Masz już konto?",
+    "login-now": "Zaloguj się tutaj!",
+    "errors": {
+      "email": "Nieprawidłowy adres e-mail",
+      "email-empty": "Adres e-mail nie może być pusty",
+      "password": "Hasło nie może być puste",
+      "password-length": "Hasło musi mieć co najmniej 8 znaków",
+      "passwords-mismatch": "Hasła nie są takie same",
+      "server-error": "Wewnętrzny błąd serwera. Skontaktuj się z pomocą techniczną."
+    }
+  },
+  "CheckoutFormServer": {
+    "checkout": "Do kasy"
+  },
+  "CheckoutForm": {
+    "form": {
+      "buy-as": "Kupujesz jako",
+      "individual": "Osoba prywatna",
+      "company": "Firma",
+      "shipping-address": "Adres dostawy",
+      "other-invoice": "Chcę otrzymać fakturę na inne dane",
+      "full-name": "Imię i nazwisko lub nazwa firmy",
+      "full-name-placeholder": "Jan Kowalski",
+      "tin": "NIP",
+      "tin-placeholder": "123-456-78-90",
+      "address": "Adres",
+      "address-placeholder": "ul. Przykładowa 1",
+      "city": "Miasto",
+      "city-placeholder": "Warszawa",
+      "country": "Kraj",
+      "country-placeholder": "Polska",
+      "region": "Region",
+      "region-placeholder": "Mazowieckie",
+      "email": "Adres e-mail",
+      "email-placeholder": "jan.kowalski@example.pl",
+      "phone": "Numer telefonu",
+      "phone-placeholder": "+48 123 456 789",
+      "postal-code": "Kod pocztowy",
+      "postal-code-placeholder": "00-000",
+      "delivery-method": "Metoda dostawy",
+      "payment-method": "Metoda płatności",
+      "change": "Zmień",
+      "invoice-data": "Dane do faktury",
+      "no-shipping": "Brak dostępnych metod dostawy. Skontaktuj się z nami.",
+      "internal-server-error": "Wystąpił niezidentyfikowany błąd. Skontaktuj się z nami."
+    },
+    "change-address-dialog": {
+      "change-address": "Zmień swój adres",
+      "add-new": "Dodaj nowy adres",
+      "save": "Zapisz"
+    },
+    "add-address-dialog": {
+      "add-address": "Dodaj nowy adres",
+      "save": "Zapisz",
+      "saving": "Zapisywanie..."
+    },
+    "countries": {
+      "ad": "Andora",
+      "al": "Albania",
+      "at": "Austria",
+      "ba": "Bośnia i Hercegowina",
+      "be": "Belgia",
+      "bg": "Bułgaria",
+      "by": "Białoruś",
+      "ch": "Szwajcaria",
+      "cy": "Cypr",
+      "cz": "Czechy",
+      "de": "Niemcy",
+      "dk": "Dania",
+      "ee": "Estonia",
+      "es": "Hiszpania",
+      "fi": "Finlandia",
+      "fr": "Francja",
+      "gb": "Wielka Brytania",
+      "gr": "Grecja",
+      "hr": "Chorwacja",
+      "hu": "Węgry",
+      "ie": "Irlandia",
+      "is": "Islandia",
+      "it": "Włochy",
+      "li": "Liechtenstein",
+      "lt": "Litwa",
+      "lu": "Luksemburg",
+      "lv": "Łotwa",
+      "mc": "Monako",
+      "md": "Mołdawia",
+      "me": "Czarnogóra",
+      "mk": "Macedonia Północna",
+      "mt": "Malta",
+      "nl": "Holandia",
+      "no": "Norwegia",
+      "pl": "Polska",
+      "pt": "Portugalia",
+      "ro": "Rumunia",
+      "rs": "Serbia",
+      "ru": "Rosja",
+      "se": "Szwecja",
+      "si": "Słowenia",
+      "sk": "Słowacja",
+      "sm": "San Marino",
+      "ua": "Ukraina",
+      "va": "Watykan",
+      "us": "Stany Zjednoczone",
+      "other": "Inny"
+    },
+    "errors": {
+      "invoice": {
+        "name": "Nazwa nie może być pusta",
+        "address": "Adres nie może być pusty",
+        "city": "Miasto nie może być puste",
+        "country": "Kraj nie może być pusty",
+        "region": "Region nie może być pusty",
+        "postalCode": "Kod pocztowy nie może być pusty",
+        "tin": "NIP nie może być pusty"
+      },
+      "shipping": {
+        "name": "Nazwa nie może być pusta",
+        "address": "Adres nie może być pusty",
+        "city": "Miasto nie może być puste",
+        "country": "Kraj nie może być pusty",
+        "region": "Region nie może być pusty",
+        "postalCode": "Kod pocztowy nie może być pusty",
+        "phone": "Nieprawidłowy numer telefonu",
+        "email": "Nieprawidłowy adres e-mail"
+      },
+      "deliveryMethod": "Musisz wybrać metodę dostawy",
+      "paymentMethod": "Musisz wybrać metodę płatności"
+    }
+  },
+  "DeliveryMethods": {
+    "inpost-pickup": "Paczkomaty InPost",
+    "inpost-courier": "Kurier InPost",
+    "choose-pickup": "Wybierz paczkomat",
+    "close": "Zamknij"
+  },
+  "OrderSummary": {
+    "subtotal": "Suma częściowa",
+    "shipping": "Dostawa",
+    "total": "Razem",
+    "confirm": "Złóż zamówienie",
+    "remove": "Usuń",
+    "items-in-cart": "Items in your cart",
+    "order-summary": "Podsumowanie zamówienia"
+  },
+  "Account": {
+    "navigation": {
+      "orders": "Zamówienia",
+      "settings": "Ustawienia",
+      "orders-data": "Dane do zamówień",
+      "help": "Pomoc"
+    },
+    "orders": {
+      "title": "Zamówienia",
+      "pending": "<yellow>Oczekujące</yellow>",
+      "paid": "<green>Opłacone</green>",
+      "unpaid": "<red>Nieopłacone</red>",
+      "processing": "<yellow>Realizowane</yellow>",
+      "shipped": "<green>Wysłane</green>",
+      "completed": "<green>Zrealizowane</green>",
+      "cancelled": "<red>Anulowane</red>",
+      "returned": "<red>Zwrócone</red>"
+    },
+    "orders-data": {
+      "title": "Dane do zamówień",
+      "add-new": "Dodaj nowy adres",
+      "set-as-default": "Ustaw jako domyślny"
+    },
+    "settings": {
+      "title": "Ustawienia konta",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "birthDate": "Data urodzenia",
+      "email": "Adres e-mail",
+      "password": "Hasło",
+      "change-password": "Zmień hasło",
+      "old-password": "Stare hasło",
+      "new-password": "Nowe hasło",
+      "confirm-password": "Potwierdź hasło",
+      "save": "Zapisz",
+      "update": "Aktualizuj",
+      "password-form": {
+        "success": "Hasło zostało zmienione pomyślnie. Możesz zamknąć to okno",
+        "errors": {
+          "old-password": "Stare hasło nie może być puste",
+          "new-password": "Nowe hasło nie może być puste",
+          "password-length": "Hasło musi mieć co najmniej 8 znaków",
+          "passwords-mismatch": "Hasła nie są takie same",
+          "password-incorrect": "Stare hasło jest nieprawidłowe",
+          "password-same": "Nowe hasło musi być inne niż stare",
+          "server-error": "Wewnętrzny błąd serwera. Skontaktuj się z pomocą techniczną."
+        }
+      }
+    },
+    "wrapper": {
+      "my-account": "Moje konto",
+      "logout": "Wyloguj się"
+    }
+  },
+  "Order": {
+    "thank-you": "Dziękujemy!",
+    "pending": {
+      "title": "Twoje zamówienie oczekuje na realizację.",
+      "subtitle": "Proszę poczekać na przetworzenie płatności. Zamówienie {orderID}"
+    },
+    "paid": {
+      "title": "Otrzymaliśmy płatność.",
+      "subtitle": "Wkrótce rozpoczniemy realizację Twojego zamówienia {orderID}."
+    },
+    "unpaid": {
+      "title": "Płatność nie powiodła się.",
+      "subtitle": "Spróbuj ponownie lub skontaktuj się z obsługą, jeśli masz problemy. Zamówienie {orderID}"
+    },
+    "processing": {
+      "title": "Realizujemy Twoje zamówienie.",
+      "subtitle": "Zamówienie {orderID} zostanie wkrótce wysłane."
+    },
+    "shipped": {
+      "title": "W drodze!",
+      "subtitle": "Twoje zamówienie {orderID} zostało wysłane."
+    },
+    "completed": {
+      "title": "Zakończone!",
+      "subtitle": "Otrzymałeś zamówienie {orderID}."
+    },
+    "cancelled": {
+      "title": "Anulowane.",
+      "subtitle": "Zamówienie {orderID} zostało anulowane."
+    },
+    "returned": {
+      "title": "Zwrócone.",
+      "subtitle": "Zamówienie {orderID} zostało zwrócone."
+    },
+    "tracking-number": "Numer śledzenia: ",
+    "your-order": "Twoje zamówienie",
+    "items": "Produkty",
+    "quantity": "Ilość",
+    "price": "Cena",
+    "your-information": "Twoje dane",
+    "shipping-address": "Adres dostawy",
+    "shipping-method": "Metoda dostawy",
+    "summary": "Podsumowanie",
+    "subtotal": "Suma częściowa",
+    "shipping": "Dostawa",
+    "total": "Razem",
+    "pickup-point": "Punkt odbioru"
+  },
+  "Emails": {
+    "reset-password": {
+      "greeting": "Witaj {name},",
+      "message": "Ktoś poprosił o zresetowanie hasła do Twojego konta. Jeśli to nie Ty, zignoruj tę wiadomość.",
+      "subject": "Resetuj hasło",
+      "button": "Zresetuj hasło",
+      "body": "Kliknij w link poniżej, aby zresetować hasło"
+    },
+    "verify-email": {
+      "greeting": "Witaj {name},",
+
+      "subject": "Zweryfikuj swój adres e-mail",
+      "button": "Zweryfikuj e-mail",
+      "body": "Kliknij w link poniżej, aby zweryfikować swój adres e-mail"
+    },
+    "welcome": {
+      "greeting": "Witaj {name},",
+      "preview": "Witaj w naszym sklepie. Mamy nadzieję, że będziesz zadowolony z zakupów.",
+      "subject": "Cześć! Dziękujemy za rejestrację",
+      "body": "Mamy przyjemność powitać Cię w naszym sklepie. Znajdziesz u nas szeroki wybór produktów w atrakcyjnych cenach.",
+      "button": "Przejdź do sklepu"
+    }
+  },
+  "ResetPasswordForm": {
+    "new-password": "Nowe hasło",
+    "confirm-password": "Potwierdź hasło",
+    "change-password": "Zmień hasło",
+    "title": "Zresetuj swoje hasło",
+    "errors": {
+      "old-password": "Stare hasło nie może być puste",
+      "new-password": "Nowe hasło nie może być puste",
+      "password-length": "Hasło musi mieć co najmniej 8 znaków",
+      "passwords-mismatch": "Hasła nie są takie same",
+      "password-incorrect": "Stare hasło jest nieprawidłowe",
+      "password-same": "Nowe hasło musi być inne niż stare",
+      "server-error": "Wewnętrzny błąd serwera. Skontaktuj się z pomocą techniczną."
+    }
+  },
+  "Search": {
+    "no-results": "Brak wyników.",
+    "results": "Wyniki dla: ",
+    "search": "Szukaj...",
+    "categories": "Kategorie",
+    "products": "Produkty"
+  }
+}

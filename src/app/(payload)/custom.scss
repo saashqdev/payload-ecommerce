@@ -1,0 +1,172 @@
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is([data-theme='dark'] *));
+
+.table {
+  width: 100%;
+}
+.login__form a {
+  display: none;
+}
+
+.custom-select {
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-s);
+}
+
+.variant-gap-row .row__fields {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+}
+
+.w-full-border {
+  width: calc(100% + 2px);
+}
+
+div.react-colorful .react-colorful__pointer {
+  width: 20px;
+  height: 20px;
+}
+
+div.react-colorful .react-colorful__hue {
+  height: 22px;
+}
+
+[data-theme="dark"] {
+  --background: 0 0% 0%;
+  --foreground: 210 40% 98%;
+
+  --card: 0 0% 4%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 0, 0%, 15%, 0.5;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+
+  --success: 196 100% 14%;
+  --warning: 34 51% 25%;
+  --error: 10 39% 43%;
+  --color-payload-background-color: var(--theme-bg);
+  --color-payload-card: var(--theme-card);
+  --color-payload-foreground: var(--theme-foreground);
+
+  /* Payload Elevation Scale */
+  --color-payload-elevation-0: var(--theme-elevation-0);
+  --color-payload-elevation-50: var(--theme-elevation-50);
+  --color-payload-elevation-100: var(--theme-elevation-100);
+  --color-payload-elevation-150: var(--theme-elevation-150);
+  --color-payload-elevation-200: var(--theme-elevation-200);
+  --color-payload-elevation-300: var(--theme-elevation-300);
+  --color-payload-elevation-400: var(--theme-elevation-400);
+  --color-payload-elevation-500: var(--theme-elevation-500);
+  --color-payload-elevation-600: var(--theme-elevation-600);
+  --color-payload-elevation-700: var(--theme-elevation-700);
+  --color-payload-elevation-800: var(--theme-elevation-800);
+  --color-payload-elevation-900: var(--theme-elevation-900);
+}
+
+@theme inline {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 240 5% 96%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 240 6% 90%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+
+  --radius: 0.2rem;
+
+  --success: 196 52% 74%;
+  --warning: 34 89% 85%;
+  --error: 10 100% 86%;
+  --color-payload-background-color: var(--theme-bg);
+  --color-payload-card: var(--theme-card);
+  --color-payload-foreground: var(--theme-foreground);
+
+  /* Payload Elevation Scale */
+  --color-payload-elevation-0: var(--theme-elevation-0);
+  --color-payload-elevation-50: var(--theme-elevation-50);
+  --color-payload-elevation-100: var(--theme-elevation-100);
+  --color-payload-elevation-150: var(--theme-elevation-150);
+  --color-payload-elevation-200: var(--theme-elevation-200);
+  --color-payload-elevation-300: var(--theme-elevation-300);
+  --color-payload-elevation-400: var(--theme-elevation-400);
+  --color-payload-elevation-500: var(--theme-elevation-500);
+  --color-payload-elevation-600: var(--theme-elevation-600);
+  --color-payload-elevation-700: var(--theme-elevation-700);
+  --color-payload-elevation-800: var(--theme-elevation-800);
+  --color-payload-elevation-900: var(--theme-elevation-900);
+}
+
+@layer theme {
+  @import "tailwindcss/theme.css";
+}
+
+@layer base {
+  .twp {
+    @import "tailwindcss/preflight.css";
+
+    * {
+      border-color: hsla(var(--border));
+      outline-color: color-mix(in oklab, hsl(var(--ring)) 50%, transparent);
+    }
+    body {
+      color: hsl(var(--foreground));
+      background-color: hsla(var(--background));
+    }
+  }
+
+  .twp.no-twp {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+      all: revert-layer;
+    }
+  }
+}
+
+@layer utilities {
+  @import "tailwindcss/utilities.css";
+}
