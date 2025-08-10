@@ -134,7 +134,7 @@ export interface Config {
     'inpost-courier': InpostCourier;
     'inpost-courier-cod': InpostCourierCod;
     paywalls: Paywall;
-    fulfilment: Fulfilment;
+    fulfilment: Fulfillment;
   };
   globalsSelect: {
     header: HeaderSelect<false> | HeaderSelect<true>;
@@ -146,7 +146,7 @@ export interface Config {
     'inpost-courier': InpostCourierSelect<false> | InpostCourierSelect<true>;
     'inpost-courier-cod': InpostCourierCodSelect<false> | InpostCourierCodSelect<true>;
     paywalls: PaywallsSelect<false> | PaywallsSelect<true>;
-    fulfilment: FulfilmentSelect<false> | FulfilmentSelect<true>;
+    fulfilment: FulfillmentSelect<false> | FulfillmentSelect<true>;
   };
   locale: 'en' | 'pl';
   user:
@@ -3172,7 +3172,7 @@ export interface Paywall {
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "fulfilment".
  */
-export interface Fulfilment {
+export interface Fulfillment {
   id: number;
   shopAddress: {
     name: string;
@@ -3546,7 +3546,7 @@ export interface PaywallsSelect<T extends boolean = true> {
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "fulfilment_select".
  */
-export interface FulfilmentSelect<T extends boolean = true> {
+export interface FulfillmentSelect<T extends boolean = true> {
   shopAddress?:
     | T
     | {

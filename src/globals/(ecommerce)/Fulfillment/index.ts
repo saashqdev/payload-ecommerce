@@ -2,7 +2,7 @@ import { type GlobalConfig } from "payload";
 
 import { countryList } from "../Couriers/utils/countryList";
 
-export const Fulfilment: GlobalConfig = {
+export const Fulfillment: GlobalConfig = {
   slug: "fulfilment",
   admin: {
     group: {
@@ -11,7 +11,7 @@ export const Fulfilment: GlobalConfig = {
     },
   },
   label: {
-    en: "Fulfilment data",
+    en: "Fulfillment data",
     pl: "Dane realizacji",
   },
   fields: [

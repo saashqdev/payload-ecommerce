@@ -20,6 +20,8 @@ import { cn } from "src/utilities/cn";
 
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -46,7 +48,7 @@ export default async function RootLayout({
     <html
       className={cn(GeistSans.variable, GeistMono.variable, "twp overflow-x-clip lg:overflow-y-scroll")}
       lang={locale}
-      // data-thmee="light"
+      // data-theme="light"
       // suppressHydrationWarning
     >
       <head>

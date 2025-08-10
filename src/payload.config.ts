@@ -25,7 +25,7 @@ import { Posts } from "./collections/Posts";
 import { InPostCourier } from "./globals/(ecommerce)/Couriers/InPostCourier/config";
 import { InPostCourierCOD } from "./globals/(ecommerce)/Couriers/InPostCourierCOD/config";
 import { InPostPickup } from "./globals/(ecommerce)/Couriers/InPostPickup/config";
-import { Fulfilment } from "./globals/(ecommerce)/Fulfilment";
+import { Fulfillment } from "./globals/(ecommerce)/Fulfillment";
 import { ShopLayout } from "./globals/(ecommerce)/Layout/config";
 import { Paywalls } from "./globals/(ecommerce)/Paywalls/config";
 import { ShopSettings } from "./globals/(ecommerce)/ShopSettings/config";
@@ -112,7 +112,7 @@ export default buildConfig({
   editor: defaultLexical,
   db: postgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URI
+      connectionString: process.env.DATABASE_URI,
     },
   }),
   collections: [
@@ -139,7 +139,7 @@ export default buildConfig({
     InPostCourier,
     InPostCourierCOD,
     Paywalls,
-    Fulfilment,
+    Fulfillment,
   ],
   plugins: [
     ...plugins,
