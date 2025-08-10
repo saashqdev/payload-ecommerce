@@ -2,7 +2,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import { postgresAdapter } from "@payloadcms/db-postgres";
-import { resendAdapter } from "@payloadcms/email-resend";
 import { s3Storage } from "@payloadcms/storage-s3";
 import { buildConfig } from "payload";
 import { en } from "payload/i18n/en";
@@ -10,7 +9,6 @@ import { pl } from "payload/i18n/pl";
 import sharp from "sharp"; // sharp-import
 
 import { defaultLexical } from "@/fields/defaultLexical";
-import { env } from "env";
 
 import { customTranslationsObject } from "./admin/translations/custom-translations";
 import { Customers } from "./collections/(ecommerce)/Customers";
@@ -167,13 +165,4 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, "payload-types.ts"),
   },
-  ...(env?.RESEND_API_KEY &&
-    env?.RESEND_SENDER_EMAIL &&
-    env?.RESEND_SENDER_NAME && {
-      email: resendAdapter({
-        defaultFromAddress: env.RESEND_SENDER_EMAIL,
-        defaultFromName: env.RESEND_SENDER_NAME,
-        apiKey: env.RESEND_API_KEY,
-      }),
-    }),
 });
