@@ -37,5 +37,15 @@
       "source.fixAll.eslint": "explicit"
     }
   },
-  "cSpell.words": ["autopay", "ecommerce", "geowidget", "headlessui", "Hotspot", "payloadcms"]
+  "cSpell.words": [
+    "autopay",
+    "ecommerce",
+    "geowidget",
+    "headlessui",
+    "Hotspot",
+    "payloadcms",
+    "priceasc",
+    "pricedesc",
+    "Produkt"
+  ]
 }

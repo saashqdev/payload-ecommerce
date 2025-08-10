@@ -103,9 +103,9 @@ const useCartStore = create<CartState>((set) => ({
     set((state) => {
       const updatedCart = state.cart?.filter((product) => {
         if (variantSlug) {
-          return product.id !== productId || product.chosenVariantSlug !== variantSlug;
+          return String(product.id) !== productId || product.chosenVariantSlug !== variantSlug;
         }
-        return product.id !== productId;
+        return String(product.id) !== productId;
       });
 
       if (canUseDOM) {

@@ -160,7 +160,10 @@ export const SlideOver = () => {
                                 <button
                                   type="button"
                                   onClick={() => {
-                                    removeFromWishList(product.id, product.variant?.slug ?? undefined);
+                                    removeFromWishList(
+                                      String(product.id),
+                                      product.variant?.slug ?? undefined,
+                                    );
                                   }}
                                   className="text-main-600 hover:text-main-500 font-medium"
                                 >
@@ -178,7 +181,10 @@ export const SlideOver = () => {
                                         chosenVariantSlug: product.variant?.slug ?? undefined,
                                       },
                                     ]);
-                                    removeFromWishList(product.id, product.variant?.slug ?? undefined);
+                                    removeFromWishList(
+                                      String(product.id),
+                                      product.variant?.slug ?? undefined,
+                                    );
                                   }}
                                   className="ml-auto w-fit font-medium"
                                 >

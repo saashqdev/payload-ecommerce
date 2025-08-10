@@ -69,10 +69,10 @@ export const DefaultHeader = ({ data, disableCart }: { data: Header; disableCart
   return (
     <header className={classes} style={data.background ? { background: data.background } : {}}>
       <div
-        className={`container relative flex w-full items-center py-6 lg:gap-8 ${scrollValue > 0 ? "scrolled" : ""} ${isMenuOpened ? "opened" : ""}`}
+        className={`relative container flex w-full items-center py-6 lg:gap-8 ${scrollValue > 0 ? "scrolled" : ""} ${isMenuOpened ? "opened" : ""}`}
       >
         <Link href="/" className="mr-auto">
-          {data.logo && typeof data.logo !== "string" && data.logo.url && data.logo.alt ? (
+          {data.logo && typeof data.logo === "object" && "url" in data.logo && "alt" in data.logo ? (
             <Media
               resource={data.logo}
               className={cn(isMenuOpened && "invert lg:invert-0", "-my-7 h-[88px] w-full max-w-37.5")}
@@ -99,7 +99,7 @@ export const DefaultHeader = ({ data, disableCart }: { data: Header; disableCart
           />
         </button>
         <nav
-          className={`absolute left-1/2 top-0 z-10 flex origin-bottom transition-opacity duration-300 lg:z-10 ${isMenuOpened ? "opacity-100" : "scale-y-0 opacity-0"} h-dvh w-screen -translate-x-1/2 flex-col items-start justify-between bg-white p-8 pb-16 md:p-12 lg:static lg:h-auto lg:w-fit lg:translate-x-0 lg:scale-100 lg:flex-row lg:bg-transparent lg:p-0 lg:opacity-100`}
+          className={`absolute top-0 left-1/2 z-10 flex origin-bottom transition-opacity duration-300 lg:z-10 ${isMenuOpened ? "opacity-100" : "scale-y-0 opacity-0"} h-dvh w-screen -translate-x-1/2 flex-col items-start justify-between bg-white p-8 pb-16 md:p-12 lg:static lg:h-auto lg:w-fit lg:translate-x-0 lg:scale-100 lg:flex-row lg:bg-transparent lg:p-0 lg:opacity-100`}
         >
           <div className="flex flex-col items-start gap-12 pt-24 lg:flex-row lg:pt-0">
             {data.navItems?.map(({ link }, i) => {
@@ -115,7 +115,7 @@ export const DefaultHeader = ({ data, disableCart }: { data: Header; disableCart
             <>
               <button onClick={toggleWishList} className="relative -m-2 cursor-pointer p-2">
                 {wishlist && wishlist.length > 0 ? (
-                  <span className="absolute right-0 top-0 flex aspect-square h-5 w-5 items-center justify-center rounded-full bg-main-600 text-xs text-white">
+                  <span className="bg-main-600 absolute top-0 right-0 flex aspect-square h-5 w-5 items-center justify-center rounded-full text-xs text-white">
                     {wishlist.length}
                   </span>
                 ) : (
@@ -125,7 +125,7 @@ export const DefaultHeader = ({ data, disableCart }: { data: Header; disableCart
               </button>
               <button onClick={toggleCart} className="relative -m-2 cursor-pointer p-2">
                 {totalQuantity && totalQuantity > 0 ? (
-                  <span className="absolute right-0 top-0 flex aspect-square h-5 w-5 items-center justify-center rounded-full bg-main-600 text-xs text-white">
+                  <span className="bg-main-600 absolute top-0 right-0 flex aspect-square h-5 w-5 items-center justify-center rounded-full text-xs text-white">
                     {totalQuantity}
                   </span>
                 ) : (

@@ -53,6 +53,7 @@ export default [
       ],
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-tslint-comment": "off",
       "import/no-mutable-exports": "error",
       "import/no-cycle": "off", // bring back later
       "import/no-default-export": "error",

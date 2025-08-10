@@ -17,7 +17,9 @@ export const getOrderProducts = async (orderProducts: Order["products"] | null, 
             id:
               typeof product.product === "string"
                 ? product.product
-                : (product.product?.id ?? product.id ?? ""),
+                : typeof product.product === "object" && product.product !== null
+                  ? product.product.id
+                  : (product.id ?? ""),
             locale,
           });
           return {

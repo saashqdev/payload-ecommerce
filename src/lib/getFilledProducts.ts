@@ -18,7 +18,7 @@ export const getFilledProducts = <T extends CartProduct | WishlistProduct>(
 
   const filledProducts = products.flatMap((product) => {
     if (!product.variants || product.variants.length === 0) {
-      const item = items.find((item) => item.id === product.id);
+      const item = items.find((item) => item.id === String(product.id));
       return item
         ? [
             {
@@ -38,11 +38,13 @@ export const getFilledProducts = <T extends CartProduct | WishlistProduct>(
 
     return product.variants
       .filter((variant) => {
-        return items.some((item) => item.id === product.id && item.chosenVariantSlug === variant.variantSlug);
+        return items.some(
+          (item) => item.id === String(product.id) && item.chosenVariantSlug === variant.variantSlug,
+        );
       })
       .map((variant) => {
         const item = items.find(
-          (item) => item.id === product.id && item.chosenVariantSlug === variant.variantSlug,
+          (item) => item.id === String(product.id) && item.chosenVariantSlug === variant.variantSlug,
         );
 
         return {

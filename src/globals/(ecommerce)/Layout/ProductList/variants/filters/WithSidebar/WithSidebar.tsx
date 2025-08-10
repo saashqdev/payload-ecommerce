@@ -129,7 +129,8 @@ export const WithSidebar = ({
                     <ul role="list" className="px-2 py-3 font-medium text-gray-900">
                       {category.subcategories.docs.map(
                         (subcategory) =>
-                          typeof subcategory !== "string" && (
+                          typeof subcategory !== "string" &&
+                          typeof subcategory !== "number" && (
                             <li key={subcategory.id}>
                               <Link
                                 className="block px-2 py-3"
@@ -255,7 +256,8 @@ export const WithSidebar = ({
                     >
                       {category.subcategories.docs.map(
                         (subcategory) =>
-                          typeof subcategory !== "string" && (
+                          typeof subcategory !== "string" &&
+                          typeof subcategory !== "number" && (
                             <li key={subcategory.id}>
                               <Link href={`/category/${category.slug}/${subcategory.slug}`}>
                                 {subcategory.title}
