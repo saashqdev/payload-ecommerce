@@ -528,9 +528,9 @@ export const Products: CollectionConfig = {
           },
           admin: {
             // todo: not working condition, waiting for payload team to fix conditional tabs.
-            // condition: (data) => {
-            //   return !data.enableVariants && !data.enableVariantPrices;
-            // },
+            condition: (data) => {
+              return !data.enableVariants && !data.enableVariantPrices;
+            },
           },
           fields: [
             {

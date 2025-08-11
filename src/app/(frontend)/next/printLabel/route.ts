@@ -46,7 +46,7 @@ export async function GET(req: Request) {
       : null;
 
     if (!file) {
-      return Response.json("Cannot find file, check if printing labels is configured properly.", {
+      return Response.json("Cannot find file, check if printing labels are configured properly.", {
         status: 400,
       });
     }

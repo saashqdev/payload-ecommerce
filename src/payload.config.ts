@@ -2,7 +2,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import { postgresAdapter } from "@payloadcms/db-postgres";
-import { stripePlugin } from "@payloadcms/plugin-stripe";
 import { s3Storage } from "@payloadcms/storage-s3";
 import { buildConfig } from "payload";
 import { en } from "payload/i18n/en";
@@ -10,7 +9,6 @@ import { pl } from "payload/i18n/pl";
 import sharp from "sharp"; // sharp-import
 
 import { defaultLexical } from "@/fields/defaultLexical";
-import { env } from "env";
 
 import { customTranslationsObject } from "./admin/translations/custom-translations";
 import { Customers } from "./collections/(ecommerce)/Customers";
@@ -160,10 +158,6 @@ export default buildConfig({
         requestChecksumCalculation: "WHEN_REQUIRED",
         responseChecksumValidation: "WHEN_REQUIRED",
       },
-    }),
-    stripePlugin({
-      stripeSecretKey: env.STRIPE_SECRET_KEY,
-      stripeWebhooksEndpointSecret: env.STRIPE_WEBHOOKS_ENDPOINT_SECRET,
     }),
   ],
   secret: process.env.PAYLOAD_SECRET,
